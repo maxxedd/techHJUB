@@ -1,0 +1,115 @@
+.company-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('images/company-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+        .team-card {
+            transition: transform 0.3s ease;
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .team-img {
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .service-badge {
+            display: inline-block;
+            background-color: #6e8efb;
+            color: white;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+        }
+        .achievement-badge {
+            display: inline-block;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        .edit-form {
+            display: none;
+        }
+        .edit-mode .view-mode {
+            display: none;
+        }
+        .edit-mode .edit-form {
+            display: block;
+        }
+        .mission-vision-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid #6e8efb;
+            border-radius: 10px;
+        }
+        .stats-card {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        .ceo-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .ceo-img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background: #6e8efb;
+        }
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1100;
+        }
+        .company-values {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .value-item {
+            margin-bottom: 15px;
+        }
+        .value-icon {
+            font-size: 1.5rem;
+            color: #6e8efb;
+            margin-right: 10px;
+        }

@@ -1,0 +1,68 @@
+a[href="preferences.php"].btn.nav-link.active,
+a[href="preferences.php"].btn.active,
+a[href="preferences.php"].btn.position-relative.me-3 {
+    background: hwb(212 0% 0%) !important; /* Use a different color to distinguish */
+    color: #fff !important;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2rem rgba(0, 98, 255, 0.25);
+}
+a[href="preferences.php"].btn.position-relative.me-3 i {
+    color: #fff !important;
+}
+
+  .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1100;
+        }
+        .favorite-card {
+            transition: all 0.3s ease;
+            border: 1px solid #dee2e6;
+            position: relative;
+        }
+        .favorite-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .favorite-section {
+            margin-bottom: 40px;
+        }
+        .empty-favorites {
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .heart-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255,255,255,0.8);
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #dc3545;
+            font-size: 18px;
+            z-index: 2;
+        }
+        .product-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .category-badge {
+            background-color: #6e8efb;
+            color: white;
+            padding: 0.25em 0.4em;
+            font-size: 0.75rem;
+            border-radius: 0.25rem;
+            display: inline-block;
+        }

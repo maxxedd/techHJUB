@@ -1,0 +1,135 @@
+       :root {
+            --khaki-primary: #C3B091;
+            --khaki-dark: #A8996E;
+            --khaki-light: #D8CBB6;
+            --text-dark: #333;
+            --text-light: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: var(--text-dark);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar-main {
+            background-color: var(--white) !important;
+            box-shadow: var(--shadow);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: var(--white);
+            position: fixed;
+            height: 100vh;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .main-content {
+            margin-left: 250px;
+            transition: all 0.3s;
+        }
+        
+        .nav-link {
+            color: var(--text-dark);
+            border-radius: 6px;
+            margin: 2px 0;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            background-color: var(--khaki-light);
+            color: var(--text-dark);
+        }
+        
+        .nav-link i {
+            margin-right: 10px;
+            color: var(--khaki-dark);
+        }
+        
+        .nav-link.active i {
+            color: var(--khaki-dark);
+        }
+        
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--khaki-primary);
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .brand-logo {
+            max-width: 180px;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .welcome-header {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+        
+        .employee-status {
+            padding: 0.35em 0.65em;
+            font-size: 0.75em;
+            font-weight: 700;
+            border-radius: 0.25rem;
+        }
+        
+        .status-active {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .status-inactive {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .employee-card {
+            transition: all 0.3s;
+        }
+        
+        .employee-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 992px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+            
+            .sidebar.active {
+                transform: translateX(0);
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+        }

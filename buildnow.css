@@ -1,0 +1,142 @@
+
+    .build-section {
+      background-color: white;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    }
+    
+    .component-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 18px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .component-card:hover {
+      border-color: var(--primary-color);
+      box-shadow: 0 5px 20px rgba(110, 142, 251, 0.15);
+      transform: translateY(-3px);
+    }
+    
+    .component-card.selected {
+      border: 2px solid var(--primary-color);
+      background-color: rgba(110, 142, 251, 0.05);
+    }
+    
+    .build-category {
+      background: linear-gradient(135deg, var(--primary-color), var(--dark-violet));
+      color: white;
+      padding: 12px 18px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    
+    .saved-build-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 18px;
+      transition: all 0.2s ease;
+    }
+    
+    .saved-build-card:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .build-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    
+    .favorite-btn {
+      background: #ffc107;
+      color: #212529;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: all 0.2s;
+    }
+    
+    .favorite-btn:hover {
+      background: #e0a800;
+    }
+    
+    .favorite-btn.favorited {
+      background: #fd7e14;
+      color: white;
+    }
+    
+    .delete-build-btn {
+      background: #dc3545;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: all 0.2s;
+    }
+    
+    .delete-build-btn:hover {
+      background: #c82333;
+    }
+    
+    .add-to-cart-btn {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: all 0.2s;
+    }
+    
+    .add-to-cart-btn:hover {
+      background: #5a67d8;
+    }
+    
+    .component-section {
+      margin-bottom: 30px;
+    }
+    
+    .component-section h4 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+    
+    .price {
+      font-weight: 700;
+      color: var(--primary-color);
+      font-size: 1.1rem;
+    }
+    
+    .summary-item {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .prebuild-card, .custombuild-card {
+      transition: all 0.3s ease;
+    }
+    
+    .prebuild-card:hover, .custombuild-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+       /* Highlight the active nav icon for Build Now */
+a[href="buildnow.php"].btn.nav-link.active,
+a[href="buildnow.php"].btn.active,
+a[href="buildnow.php"].btn.position-relative.me-3 {
+    background: #0d6efd !important;
+    color: #fff !important;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+}
+a[href="buildnow.php"].btn.position-relative.me-3 i {
+    color: #fff !important;
+}
